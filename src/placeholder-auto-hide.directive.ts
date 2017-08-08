@@ -3,7 +3,7 @@ import { Directive, ElementRef, Input, HostListener } from '@angular/core';
 @Directive({
   selector: '[placeholder-auto-hide]'
 })
-export class AutoHideDirective {
+export class PlaceholderAutoHideDirective {
 
   @Input() placeholder: string;
 

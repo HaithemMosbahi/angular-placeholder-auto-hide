@@ -15,4 +15,4 @@ export * from './placeholder-auto-hide.directive'
     PlaceholderAutoHideDirective
   ]
 })
-export class SampleModule { }
+export class PlaceholderAutoHideModule { }
