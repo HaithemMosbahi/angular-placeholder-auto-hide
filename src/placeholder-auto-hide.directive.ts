@@ -7,12 +7,10 @@ export class PlaceholderAutoHideDirective {
 
   @Input() placeholder: string;
 
-  constructor(private el: ElementRef) {
-
-  }
+  constructor(private el: ElementRef) { }
 
   /**
-   * Listen to focus event on input field in order to hide the placeholder
+   * Listen to focus event on input fields in order to hide the placeholder
    */
   @HostListener('focus')
   onFocus() {
@@ -20,12 +18,12 @@ export class PlaceholderAutoHideDirective {
       this.el.nativeElement.setAttribute('placeholder', '');
     }
   }
-  
+
   /**
-   * Listen to focusout event on input field in order to redisplay the placeholder
+   * Listen to focusout event on input fields in order to redisplay the placeholder
    */
   @HostListener('focusout')
-  onBlur() {
+  onFocusOut() {
     if (this.placeholder) {
       this.el.nativeElement.setAttribute('placeholder', this.placeholder);
     }
