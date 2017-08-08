@@ -1,0 +1,28 @@
+{
+  "name": "ngx-placeholder-auto-hide",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/HaithemMosbahi/angular-placeholder-auto-hide"
+  },
+  "author": {
+    "name": "Haithem Mosbahi",
+    "email": "elmosbahihaithem@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "http://github.com/HaithemMosbahi/angular-placeholder-auto-hide/issues"
+  },
+  "main": "ngx-placeholder-auto-hide.umd.js",
+  "module": "ngx-placeholder-auto-hide.js",
+  "jsnext:main": "ngx-placeholder-auto-hide.js",
+  "typings": "ngx-placeholder-auto-hide.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
