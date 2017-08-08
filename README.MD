@@ -1,22 +1,21 @@
 # ngx-placeholder-auto-hide
+[![npm version](https://badge.fury.io/js/ngx-placeholder-auto-hide.svg)](https://www.npmjs.com/package/ngx-placeholder-auto-hide) [![Build Status](https://travis-ci.org/HaithemMosbahi/ngx-placeholder-auto-hide.svg?branch=master)](https://travis-ci.org/HaithemMosbahi/ngx-placeholder-auto-hide)
+
+Angular directive to automatically hide / show input's placeholder when focusin / focusout events are detected.
 
 ## Installation
 
-To install this library, run:
+To install ngx-placeholder-auto-hide, run:
 
 ```bash
 $ npm install ngx-placeholder-auto-hide --save
 ```
 
-## Consuming your library
+## Usage
 
-Once you have published your library to npm, you can import your library in any Angular application by running:
+1. Import PlaceholderAutoHideModule :
 
-```bash
-$ npm install ngx-placeholder-auto-hide
-```
-
-and then from your Angular `AppModule`:
+Once you have installed ngx-placeholder-auto-hide, you can import it in your `AppModule`:
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
@@ -24,8 +23,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-// Import your library
-import { SampleModule } from 'ngx-placeholder-auto-hide';
+// Import  PlaceholderAutoHideModule
+import { PlaceholderAutoHideModule } from "ngx-placeholder-auto-hide";
 
 @NgModule({
   declarations: [
@@ -33,9 +32,8 @@ import { SampleModule } from 'ngx-placeholder-auto-hide';
   ],
   imports: [
     BrowserModule,
-
-    // Specify your library as an import
-    LibraryModule
+    // Specify PlaceholderAutoHideModule as an import
+    PlaceholderAutoHideModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -43,14 +41,18 @@ import { SampleModule } from 'ngx-placeholder-auto-hide';
 export class AppModule { }
 ```
 
-Once your library is imported, you can use its components, directives and pipes in your Angular application:
+The PlaceholderAutoHideModule module has one directive exported which is placeholder-auto-hide. This directive can be applied on input fields and requires one argument which is the placeholder holder attribute
 
-```xml
-<!-- You can now use your library component in app.component.html -->
-<h1>
-  {{title}}
-</h1>
-<sampleComponent></sampleComponent>
+2. Start using it:
+
+Once the PlaceholderAutoHideModule is imported, you can start using the placeholder-auto-hide directive in your Angular application:
+
+```html
+<input type="text" placeholder="First name" placeholder-auto-hide >
+<input type="text" placeholder="Last name" placeholder-auto-hide >
+<input type="tel" placeholder="Phone number" placeholder-auto-hide >
+
+
 ```
 
 ## Development
