@@ -11,6 +11,11 @@ To install ngx-placeholder-auto-hide, run:
 $ npm install ngx-placeholder-auto-hide --save
 ```
 
+## Demo
+A live [demo](https://angular-du26zp.stackblitz.io) of the ngx-placeholder-auto-hide is hosted on stackblitz.
+
+If you would like to play with this directive, you can use this [online editor](https://stackblitz.com/edit/angular-du26zp).
+
 ## Usage
 
 1. Import PlaceholderAutoHideModule :
