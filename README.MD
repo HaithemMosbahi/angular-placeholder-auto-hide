@@ -1,5 +1,5 @@
 # ngx-placeholder-auto-hide
-[![npm version](https://badge.fury.io/js/ngx-placeholder-auto-hide.svg)](https://www.npmjs.com/package/ngx-placeholder-auto-hide) [![Build Status](https://travis-ci.org/HaithemMosbahi/ngx-placeholder-auto-hide.svg?branch=master)](https://travis-ci.org/HaithemMosbahi/ngx-placeholder-auto-hide)
+[![npm version](https://badge.fury.io/js/ngx-placeholder-auto-hide.svg)](https://www.npmjs.com/package/ngx-placeholder-auto-hide) [![Build Status](https://travis-ci.org/HaithemMosbahi/angular-placeholder-auto-hide.svg?branch=master)](https://travis-ci.org/HaithemMosbahi/angular-placeholder-auto-hide)
 
 Angular directive to automatically hide / show input's placeholder when focusin / focusout events are detected.
 
